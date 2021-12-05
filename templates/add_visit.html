@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <div> Full name: <input type="text" name="visitor"> </div> <br>
+    <div> Date time: <input type="date" name="date_time"> </div> <br>
+    <div> Reason: <input type="text" name="reason"> </div> <br>
+    <input type="submit">
+</form>
+{% endblock %}
